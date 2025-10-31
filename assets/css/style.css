@@ -29,13 +29,19 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-app
 .wave path{fill:#fff}
 
 /* ===== SNSボタン（ヒーロー＆帯） ===== */
-.social-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.sns{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;
-     padding:10px 14px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:transform .08s ease}
-.sns svg{width:18px;height:18px}
+.sns{display:inline-flex;align-items:center;gap:10px;
+     padding:10px 14px;border-radius:999px;font-weight:700;
+     text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.08);
+     transition:transform .08s ease}
 .sns:hover{transform:translateY(-1px)}
-.sns.note{background:#fff;border:1px solid var(--ring);color:#2c2c2c}
-.sns.x{background:#111;color:#fff;border:1px solid #111}
+.sns .sns-icon{display:block;width:20px;height:20px}
+
+/* 背景はボタン側で用意（ロゴ自体は加工しない） */
+.sns-note{background:#fff;border:1px solid #e5e7eb;color:#222}
+.sns-x{background:#111;border:1px solid #111;color:#fff}
+
+/* 余白（クリアスペース）を確保しやすくする */
+.social-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
 /* ===== 見出し＆カード ===== */
 h2{font-size:22px;margin:8px 0 16px}
@@ -69,3 +75,4 @@ h2{font-size:22px;margin:8px 0 16px}
 .dock-btn.note{color:#222}
 .dock-btn.x{background:#111;border-color:#111}
 .dock-btn.x svg path{fill:#fff}
+
