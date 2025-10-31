@@ -27,3 +27,7 @@ h2{font-size:22px;margin:8px 0 16px}
 
 .site-footer{border-top:1px solid var(--ring);margin-top:24px}
 .site-footer .container{display:flex;gap:16px;align-items:center;justify-content:space-between}
+.social{display:flex;gap:12px}
+.social-link{color:var(--ink);text-decoration:none;border:1px solid var(--ring);padding:6px 10px;border-radius:999px}
+.social-link:hover{border-color:var(--brand);color:var(--brand)}
+
