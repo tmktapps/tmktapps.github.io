@@ -16,13 +16,38 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <img class="brand" src="/assets/img/logo.svg" alt="tmktapps">
-      <h1>tmktapps</h1>
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+    <div class="container hero">
+      <div class="brandline">
+        <img class="brand" src="/assets/img/logo.svg" alt="tmktapps ロゴ">
+        <h1>tmktapps</h1>
+      </div>
       <p class="lead">つくって、楽しくつづけられるアプリ。</p>
-      <nav class="nav" aria-label="サイト内ナビゲーション">
-        <a href="/">ホーム</a>
-      </nav>
+
+      <!-- SNSをしっかり目立たせる帯 -->
+      <div class="social-cta">
+        <a class="sns note" target="_blank" rel="noopener" href="https://note.com/bright_ixia5175" aria-label="note 公式アカウントへ">
+          <!-- noteアイコン（インラインSVG） -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4zM15 4v4h4" /></svg>
+          note
+        </a>
+        <a class="sns x" target="_blank" rel="noopener" href="https://x.com/tmkt36149?s=21&t=WkSwfBNDjPVtsWyIZ0dHPA" aria-label="X 公式アカウントへ">
+          <!-- Xアイコン -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3l7.5 9.2L4 21h3.2l6-6.9 4.8 6.9H20l-7.2-9.4L19.5 3H16.3l-5.4 6.2L7 3z"/></svg>
+          X
+        </a>
+      </div>
+    </div>
+
+    <!-- セクション区切りの波 -->
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,80 C240,140 480,20 720,70 C960,120 1200,110 1440,50 L1440,120 L0,120 Z"></path>
+      </svg>
     </div>
   </header>
 
@@ -77,14 +102,36 @@
     </section>
   </main>
 
+  <section class="follow-band" aria-label="フォローのご案内">
+    <div class="container band-inner">
+      <p>最新情報や開発裏話は <strong>note / X</strong> で配信中！</p>
+      <div class="band-actions">
+        <a class="sns note" target="_blank" rel="noopener" href="https://note.com/bright_ixia5175" aria-label="note 公式アカウントへ">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4zM15 4v4h4" /></svg>
+          noteを読む
+        </a>
+        <a class="sns x" target="_blank" rel="noopener" href="https://x.com/tmkt36149?s=21&t=WkSwfBNDjPVtsWyIZ0dHPA" aria-label="X 公式アカウントへ">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3l7.5 9.2L4 21h3.2l6-6.9 4.8 6.9H20l-7.2-9.4L19.5 3H16.3l-5.4 6.2L7 3z"/></svg>
+          Xでフォロー
+        </a>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container">
       <small>© tmktapps</small>
-      <div class="social">
-        <a class="social-link" target="_blank" rel="noopener" href="https://note.com/bright_ixia5175" aria-label="note 公式アカウントへ">note</a>
-        <a class="social-link" target="_blank" rel="noopener" href="https://x.com/tmkt36149?s=21&t=WkSwfBNDjPVtsWyIZ0dHPA" aria-label="X 公式アカウントへ">X</a>
-      </div>
     </div>
   </footer>
+
+  <aside class="social-dock" aria-label="ソーシャルリンク">
+    <a class="dock-btn note" target="_blank" rel="noopener" href="https://note.com/bright_ixia5175" title="note">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4zM15 4v4h4" /></svg>
+    </a>
+    <a class="dock-btn x" target="_blank" rel="noopener" href="https://x.com/tmkt36149?s=21&t=WkSwfBNDjPVtsWyIZ0dHPA" title="X">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3l7.5 9.2L4 21h3.2l6-6.9 4.8 6.9H20l-7.2-9.4L19.5 3H16.3l-5.4 6.2L7 3z"/></svg>
+    </a>
+  </aside>
+  
 </body>
 </html>
